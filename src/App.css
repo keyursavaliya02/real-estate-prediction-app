@@ -1,0 +1,81 @@
+/* Center Content */
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #FDFDFD, #E3FDFD);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  padding: 20px;
+}
+
+/* Logo Styling */
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Light Animated Spin */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s ease-in-out;
+  }
+}
+
+/* Header Styling */
+.App-header {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(12px + 1.5vmin);
+  color: #5D5F71;
+  width: 90%;
+  max-width: 600px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Subtle Hover Effect */
+.App-header:hover {
+  transform: translateY(-3px);
+}
+
+/* Stylish Link */
+.App-link {
+  color: #6BBF9D;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.App-link:hover {
+  color: #3A7D44;
+}
+
+/* Smooth Logo Animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App-header {
+    padding: 20px;
+    font-size: calc(10px + 1.5vmin);
+  }
+}
